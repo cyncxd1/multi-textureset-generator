@@ -5,7 +5,7 @@ import shutil
 
 # insert path for your texture files here.
 # *make sure to use a valid folder path
-path = r'Your path here.'
+path = r'C:\Users\cyncxd\Desktop\block'
 files = os.listdir(path)
 
 main_dir = os.path.realpath(__file__)
@@ -39,5 +39,6 @@ for item in output_files:
     if (".json" in item):
         shutil.move(os.path.join(main_dir[:-7], item), path)
         
-print(output_files)
+print(main_dir[:-7])
+
 sys.exit()
