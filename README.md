@@ -11,3 +11,8 @@ Choose suffixes
 Choose depth type
 
 Save, and then run script
+
+
+Plans:
+  - Include subfolder
+  - Option for subsurface scattering
