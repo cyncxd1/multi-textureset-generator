@@ -5,7 +5,7 @@ import shutil
 
 # insert path for your texture files here.
 # *make sure to use a valid folder path
-path = r'C:\Users\cyncxd\Desktop\block'
+path = r'Your path here'
 files = os.listdir(path)
 
 main_dir = os.path.realpath(__file__)
