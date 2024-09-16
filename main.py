@@ -5,7 +5,7 @@ import shutil
 
 # insert path for your texture files here.
 # *make sure to use a valid folder path
-path = r'C:\Users\cyncxd\Downloads\Project Quixel\textures\blocks'
+path = r'Your path here.'
 files = os.listdir(path)
 
 main_dir = os.path.realpath(__file__)
@@ -18,6 +18,7 @@ normalSuffix = "normal"
 # choose type of depth map(heightmap or normal)
 depthType = "normal"
 
+#* DO NOT CHANGE ANYTHING HERE
 def textureSet(texture_name, mer_suffix, normal_suffix, depth_type):
     texture_set = {
         "format_version": "1.16.100",
