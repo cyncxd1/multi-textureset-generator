@@ -4,7 +4,7 @@ import json
 import shutil
 
 # Insert path for your texture files here.
-path = r'C:\Users\cyncxd\Desktop\block'
+path = r'Your path here'
 files = os.listdir(path)
 
 # Get the directory of the script
@@ -14,6 +14,7 @@ output_files_dir = os.path.join(main_dir, path)  # Adjust as necessary
 # MER and normal suffixes
 merSuffix = "mer"
 normalSuffix = "normal"
+# Depth type
 depthType = "normal"
 
 def textureSet(texture, mer_suffix, normal_suffix, depth_type):
