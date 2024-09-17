@@ -20,9 +20,11 @@ def to_texture_set(diffuse, mer_suffix, normal_suffix, depth_type):
     texture_set = {
         "format_version": "1.16.100",
         "color": diffuse,
-        "metalness_emissive_roughness": diffuse + "_" + mer_suffix,
+        "metalness_emissive_roughness": diffuse + "_" + mer_suffix, # adjust as needed for subsurface scattering
         depth_type: diffuse + "_" + normal_suffix
     }
+
+# DO NOT CHANGE ANYTHING BELOW THIS SECTION
     json_file_path = os.path.join(output_files_dir, diffuse + ".texture_set.json")
     with open(json_file_path, "w", encoding="utf-8") as name:
         json.dump(texture_set, name, indent=4)
