@@ -4,7 +4,7 @@ import json
 import shutil
 
 # Insert path for your texture files here.
-PATH = r'C:\Users\cyncxd\Desktop\block'
+PATH = r'Your path here'
 files = os.listdir(PATH)
 
 # Get the directory of the script
