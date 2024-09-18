@@ -24,7 +24,7 @@ def to_texture_set(diffuse, mer_suffix, normal_suffix, depth_type):
         depth_type: diffuse + "_" + normal_suffix
     }
 
-# DO NOT CHANGE ANYTHING BELOW THIS SECTION
+# --------------------------------------------------- DO NOT CHANGE ANYTHING BELOW THIS SECTION ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     json_file_path = os.path.join(output_files_dir, diffuse + ".texture_set.json")
     with open(json_file_path, "w", encoding="utf-8") as name:
         json.dump(texture_set, name, indent=4)
