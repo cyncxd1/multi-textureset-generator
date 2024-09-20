@@ -2,19 +2,8 @@
 
 Quick tutorial:
 
-Open main.py in a text editor
+On the first prompt, paste your block folder path
 
-Replace ```'Your path here'``` to the source directory of your blocks folder
+The next three prompts are for your texture_set structure
 
-```'C:\texturepack path'```
-
-Choose suffixes
-
-Choose depth type
-
-Save, and then run script
-
-
-Plans:
-  - Include subfolder
-  - Option for subsurface scattering
+* IF you want to, you can add subsurface scattering inside the file on line 20
