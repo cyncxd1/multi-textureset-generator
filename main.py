@@ -1,4 +1,3 @@
-import sys
 import os
 import json
 import shutil
@@ -29,7 +28,7 @@ def to_texture_set(diffuse, mer_suffix, normal_suffix, depth_type):
 
 
 for item in files:
-		hasSuffix = (
+    hasSuffix = (
         "_" + MER_SUFFIX + ".png" in item or "_" + NORMAL_SUFFIX + ".png" in item
     )
     hasExtension = ".png" in item or ".tga" in item
@@ -45,4 +44,4 @@ for texture in output_files:
         shutil.move(source_path, destination_path)
         print(f"Moved {texture} to {PATH}")
 
-sys.exit()
+input("Press enter to exit\n")
