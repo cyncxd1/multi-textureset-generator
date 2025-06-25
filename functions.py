@@ -5,10 +5,12 @@ import os
 def to_texture_set(diffuse: str, mer_suffix: str, normal_suffix: str, depth_type: str, output_files_dir: str):
     texture_set: dict = {
         "format_version": "1.16.100",
-        "color": diffuse,
-        # "metalness_emissive_roughness_subsurface"
-        "metalness_emissive_roughness": f"{diffuse}_{mer_suffix}",
-        depth_type: f"{diffuse}_{normal_suffix}",
+        "minecraft:texture_set": {
+            "color": diffuse,
+            # "metalness_emissive_roughness_subsurface"
+            "metalness_emissive_roughness": f"{diffuse}_{mer_suffix}",
+            depth_type: f"{diffuse}_{normal_suffix}",
+        },
     }
 
     json_file_path: str = os.path.join(output_files_dir, f"{diffuse}.texture_set.json")
